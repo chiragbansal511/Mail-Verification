@@ -39,7 +39,7 @@ function send(receiveradd , verificationcode)
 function verificationmessage()
 {
 const verificationcode = Math.floor(Math.random()*8999 + 1000);
-send("" , verificationcode); // sender address
+send("" , verificationcode); // receiver address
 console.log(verificationcode);
 return verificationcode;
 }
