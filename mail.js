@@ -10,17 +10,17 @@ app.use(bodyparser.urlencoded({extended : true}));
 app.use(bodyparser.json());
 
 const transporter = nodemailer.createTransport({
-  service: 'chiragbansal112004@gmail.com', 
+  service: '' // sender address, 
   auth: {
-    user: 'chiragbansal112004@gmail.com', 
-    pass: "osei mgmo bdzc pizk", 
+    user: '' // sender address, 
+    pass: "" // app password, 
   },
 });
  
 function send(receiveradd , verificationcode)
 {
   const mailOptions = {
-    from: 'chiragbansal112004@gmail.com', 
+    from: '' // sender address, 
     to: receiveradd, 
     subject: 'subject', 
     text: `${verificationcode}`,
